@@ -1,0 +1,74 @@
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+.wrapper {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 0;
+	box-sizing: border-box;
+	text-align: center;
+	border: 1px solid #111;
+
+	#alert-box {
+		padding: 20px;
+		border-radius: 5px;
+		font-size: 20px;
+		color: black;
+		position: relative;
+
+		#close {
+			position: absolute;
+			right: 0;
+			top: 0;
+			color: red;
+			font: bold 15px/1 "arial";
+		}
+	}
+}
+
+.show {
+	display: block;
+}
+
+.black-bg {
+    display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 5;
+	padding: 30px;
+
+	.white-bg {
+		background: white;
+		border-radius: 5px;
+		padding: 30px;
+	}
+}
+
+.dark-mode {
+	background: black;
+	color: #ddd;
+}
+
+.slide-container {
+	width: 300vw;
+	transition: all 0.5s;
+
+	.slide-box {
+		width: 100vw;
+		float: left;
+
+		img {
+			width: 100%;
+		}
+	}
+}
+
+.slide1, .slide2, .slide3 {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	text-align: center;
+}
